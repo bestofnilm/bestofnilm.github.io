@@ -232,8 +232,29 @@ aside,
 }
 
 .contact-panel address {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
   column-count: 2;
   column-gap: 28px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  break-inside: avoid;
+}
+
+.contact-link svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: var(--rule);
+}
+
+.contact-link span {
+  display: inline-block;
 }
 
 dl {
@@ -477,6 +498,7 @@ time {
   }
 
   .contact-panel address {
+    grid-template-columns: 1fr;
     column-count: 1;
   }
 

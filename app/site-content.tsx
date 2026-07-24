@@ -378,13 +378,42 @@ export function ContactSection() {
     <footer id="contact" className="contact-panel">
       <h2>Contact</h2>
       <address>
-        <a href="mailto:ilia.kamyshev@gmail.com">ilia.kamyshev@gmail.com</a>
-        <br />
-        <a href="https://github.com/arx7ti">github.com/arx7ti</a>
-        <br />
-        <a href="https://github.com/bestofnilm">github.com/bestofnilm</a>
-        <br />
-        <a href="https://linkedin.com/in/ilia-kamyshev-76b223281">LinkedIn</a>
+        <a className="contact-link" href="mailto:ilia.kamyshev@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8-.06 7.2 5.55 7.2-5.55a.57.57 0 0 0-.45-.19H5.25a.57.57 0 0 0-.45.19Zm14.7 10.56V8.58l-6.9 5.31a1 1 0 0 1-1.2 0L4.5 8.58v8.67c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>ilia.kamyshev@gmail.com</span>
+        </a>
+        <a className="contact-link" href="https://github.com/arx7ti">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .7a11.3 11.3 0 0 0-3.57 22.02c.56.1.76-.24.76-.54v-2.09c-3.1.67-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.16 1.72 1.16 1 .1 1.68-.73 2.07-1.11.1-.73.4-1.22.72-1.5-2.47-.28-5.06-1.24-5.06-5.51 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.12-2.96 0 0 .95-.3 3.1 1.15a10.74 10.74 0 0 1 5.65 0c2.14-1.46 3.08-1.15 3.08-1.15.63 1.54.25 2.68.13 2.96.72.78 1.15 1.78 1.15 3 0 4.28-2.6 5.22-5.08 5.5.4.35.76 1.02.76 2.07v3.06c0 .3.2.65.77.54A11.3 11.3 0 0 0 12 .7Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>github.com/arx7ti</span>
+        </a>
+        <a className="contact-link" href="https://github.com/bestofnilm">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .7a11.3 11.3 0 0 0-3.57 22.02c.56.1.76-.24.76-.54v-2.09c-3.1.67-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.16 1.72 1.16 1 .1 1.68-.73 2.07-1.11.1-.73.4-1.22.72-1.5-2.47-.28-5.06-1.24-5.06-5.51 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.12-2.96 0 0 .95-.3 3.1 1.15a10.74 10.74 0 0 1 5.65 0c2.14-1.46 3.08-1.15 3.08-1.15.63 1.54.25 2.68.13 2.96.72.78 1.15 1.78 1.15 3 0 4.28-2.6 5.22-5.08 5.5.4.35.76 1.02.76 2.07v3.06c0 .3.2.65.77.54A11.3 11.3 0 0 0 12 .7Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>github.com/bestofnilm</span>
+        </a>
+        <a className="contact-link" href="https://linkedin.com/in/ilia-kamyshev-76b223281">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5.36 3.5A1.86 1.86 0 1 1 5.35 7.22 1.86 1.86 0 0 1 5.36 3.5ZM3.75 8.85h3.22V20.5H3.75V8.85Zm5.24 0h3.08v1.6h.04c.43-.82 1.48-1.7 3.04-1.7 3.26 0 3.86 2.02 3.86 4.66v7.1H15.8v-6.3c0-1.5-.03-3.43-2.22-3.43-2.22 0-2.56 1.63-2.56 3.32v6.41H7.99V8.85Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
       </address>
     </footer>
   );
