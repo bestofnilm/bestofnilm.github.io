@@ -1,104 +1,52 @@
-# Personal Website
+# Ilia Kamyshev
+
+Personal website and research profile.
+
+## About
+
+I am an AI researcher, entrepreneur, and director working at the intersection of
+machine learning, signal processing, and intelligent systems for the physical
+world.
+
+I am currently Director of [Intelligent Energy Solutions LLC](https://iesllc.ge),
+Georgia, where I lead technical, operational, and research activities and
+oversee the development of energy disaggregation analytics.
+
+I have more than 6 years of experience in research engineering and applied
+machine learning, including 5 years focused on high-frequency energy
+disaggregation and more than 2 years leading R&D and company operations.
+
+I am also a founder of an energy disaggregation startup that secured $100K in
+pre-seed funding from an angel investor.
+
+I finished PhD studies in Engineering Systems and am awaiting the PhD defense
+in early 2027. I also hold an MSc in Information Technology and graduated from
+the Skolkovo Institute of Science and Technology, founded in collaboration with
+MIT, where I worked with notable professors such as Henni Ouerdane and Vladimir
+Terzija.
+
+My work has resulted in 8 scientific publications, 1 granted patent, and a
+Best Paper Award at IEEE EI2. I have also participated in research and startup
+projects with combined funding of more than $1.5 million and have 5 years of
+mentoring experience with students, researchers, and early-stage technology
+teams.
+
+## Research Interests
+
+- Artificial intelligence for physical and energy systems
+- Machine learning models that remain interpretable in real deployments
+- Neural networks, signal processing, and representation learning for time-series data
+- Open-set recognition and robust generalization under distribution shift
+- Synthetic data generation for testing and improving model generalization
+- Applied analytics systems that connect research prototypes with production software
+
+## Professional Skills
+
+- Machine learning, neural networks, and AI-assisted development
+- Python, data analysis, scientific computing, and technical writing
+- Linux, Git, Docker, SQL / NoSQL, and reproducible research workflows
+- Signal processing and applied modeling for physical systems
 
 ## License
 
 This project is proprietary. All rights are reserved. See [LICENSE](LICENSE).
-
-# vinext-starter
-
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
-
-## Prerequisites
-
-- Node.js `>=22.13.0`
-
-## Quick Start
-
-```bash
-npm install
-npm run dev
-npm run build
-```
-
-This starter does not use `wrangler.jsonc`.
-
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
