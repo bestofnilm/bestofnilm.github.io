@@ -4,8 +4,8 @@ Personal website and research profile.
 
 ## About
 
-I am an independent researcher, PhD candidate, and AI researcher based in
-Tbilisi, Georgia, working at the intersection of machine learning, signal
+I am an independent researcher and PhD candidate based in Tbilisi, Georgia,
+working at the intersection of machine learning, signal
 processing, and intelligent systems for the physical world.
 
 I also serve as Director of [Intelligent Energy Solutions LLC](https://iesllc.ge),

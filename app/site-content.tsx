@@ -149,9 +149,9 @@ export function BioSection() {
       <article>
         <h2>Biography</h2>
         <p>
-          I am an independent researcher, PhD candidate, and AI researcher based in Tbilisi,
-          Georgia. My work focuses on machine learning, energy disaggregation, and intelligent
-          systems for real-world applications.
+          I am an independent researcher and PhD candidate based in Tbilisi, Georgia. My work
+          focuses on machine learning, energy disaggregation, and intelligent systems for
+          real-world applications.
         </p>
         <p>
           I also serve as Director of <a href="https://iesllc.ge">Intelligent Energy Solutions LLC</a>,
