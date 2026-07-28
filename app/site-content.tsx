@@ -113,7 +113,7 @@ export function SiteChrome({
         <div>
           <p className="kicker">Personal website</p>
           <h1>Ilia Kamyshev</h1>
-          <p className="dek">Independent researcher · PhD candidate · AI researcher</p>
+          <p className="dek">PhD candidate · AI researcher</p>
           <p className="core-message">
             I am a research engineer based in Tbilisi, Georgia, building intelligent systems for
             the physical world and turning difficult ideas into working systems.
