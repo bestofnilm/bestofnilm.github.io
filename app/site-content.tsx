@@ -38,6 +38,14 @@ const publications = [
   },
   {
     year: "2025",
+    title:
+      "Indoor thermal comfort management: A Bayesian machine-learning approach to data denoising and dynamics prediction of HVAC systems",
+    venue: "Journal of Building Engineering",
+    people: "J. Penuela, S. Moghimian Hoosh, I. Kamyshev, A. Bischi, H. Ouerdane",
+    href: "https://www.sciencedirect.com/science/article/abs/pii/S2352710225019965",
+  },
+  {
+    year: "2025",
     title: "Enhancing Non-Intrusive Load Monitoring with Features Extracted by ICA",
     venue: "IEEE REEPE",
     people: "S. Moghimian Hoosh, I. Kamyshev, H. Ouerdane",
