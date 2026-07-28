@@ -113,10 +113,10 @@ export function SiteChrome({
         <div>
           <p className="kicker">Personal website</p>
           <h1>Ilia Kamyshev</h1>
-          <p className="dek">AI researcher · Entrepreneur · Director</p>
+          <p className="dek">Independent researcher · PhD candidate · AI researcher</p>
           <p className="core-message">
-            I build intelligent systems for the physical world. I am passionate to turn difficult
-            ideas into working systems.
+            I am a research engineer based in Tbilisi, Georgia, building intelligent systems for
+            the physical world and turning difficult ideas into working systems.
           </p>
         </div>
         <aside className="portrait-card masthead-portrait" aria-label="Portrait of Ilia Kamyshev">
@@ -149,10 +149,14 @@ export function BioSection() {
       <article>
         <h2>Biography</h2>
         <p>
-          I&apos;m currently Director of{" "}
-          <a href="https://iesllc.ge">Intelligent Energy Solutions LLC</a>, Georgia, where I lead
-          the company&apos;s technical, operational, and research activities and oversee the
-          development of energy disaggregation analytics.
+          I am an independent researcher, PhD candidate, and AI researcher based in Tbilisi,
+          Georgia. My work focuses on machine learning, energy disaggregation, and intelligent
+          systems for real-world applications.
+        </p>
+        <p>
+          I also serve as Director of <a href="https://iesllc.ge">Intelligent Energy Solutions LLC</a>,
+          Georgia, where I lead the company&apos;s technical, operational, and research activities and
+          oversee the development of energy disaggregation analytics.
         </p>
         <p>
           I have more than 6 years of experience in research engineering and applied machine

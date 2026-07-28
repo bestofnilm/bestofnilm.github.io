@@ -4,11 +4,11 @@ Personal website and research profile.
 
 ## About
 
-I am an AI researcher, entrepreneur, and director working at the intersection of
-machine learning, signal processing, and intelligent systems for the physical
-world.
+I am an independent researcher, PhD candidate, and AI researcher based in
+Tbilisi, Georgia, working at the intersection of machine learning, signal
+processing, and intelligent systems for the physical world.
 
-I am currently Director of [Intelligent Energy Solutions LLC](https://iesllc.ge),
+I also serve as Director of [Intelligent Energy Solutions LLC](https://iesllc.ge),
 Georgia, where I lead technical, operational, and research activities and
 oversee the development of energy disaggregation analytics.
 
